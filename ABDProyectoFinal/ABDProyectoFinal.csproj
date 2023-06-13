@@ -10,10 +10,12 @@
   <ItemGroup>
     <None Remove="Fonts\Ramyoon.ttf" />
     <None Remove="Fonts\Schoolwork-Regular.ttf" />
+    <None Remove="Fonts\simplicity.ttf" />
     <None Remove="Images\candado.png" />
     <None Remove="Images\correoElectronico.png" />
     <None Remove="Images\Fondop.jpg" />
     <None Remove="Images\FondoR.jpg" />
+    <None Remove="Images\Logol.png" />
     <None Remove="Images\perro.png" />
   </ItemGroup>
 
@@ -22,6 +24,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Fonts\Schoolwork-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\simplicity.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\candado.png">
@@ -36,13 +41,12 @@
     <Resource Include="Images\FondoR.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\Logol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\perro.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Usuario\" />
   </ItemGroup>
 
 </Project>
