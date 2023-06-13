@@ -25,11 +25,7 @@
                      <Setter Property="FontSize" Value="15"></Setter>
                  </Style>
 
-
-
-
-
-    </UserControl.Resources>
+            </UserControl.Resources>
 
 
 
@@ -174,28 +170,15 @@
                                                        </ControlTemplate>
                                                      </Button.Template>
 
-
-
                                       EDITAR</Button>
-
 
                             </Grid>
                     
-                    
-                    
-                    
-                    
                       </Grid>
-                
-                   
                 
                </StackPanel>
                 
-                
             </Border>
-
-          
-
 
         </DockPanel> 
         
