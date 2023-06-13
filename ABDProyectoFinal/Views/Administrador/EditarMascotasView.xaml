@@ -6,7 +6,241 @@
              xmlns:local="clr-namespace:ABDProyectoFinal.Views.Administrador"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+
+
+
+
+    <UserControl.Resources>
+
+        <Style TargetType="Label" x:Key="etiqueta">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+            <Setter Property="Margin" Value="0"></Setter>
+            <Setter Property="FontSize" Value="29"></Setter>
+        </Style>
+
+        <Style TargetType="Label" x:Key="INFO">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="FontFamily" Value="/Fonts/simplicity.ttf #simplicity"></Setter>
+            <Setter Property="Margin" Value="0"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+
+
+
+
+
+
+    <DockPanel >
+        <Border Padding="10" DockPanel.Dock="Top" BorderThickness="0,0,0,2" BorderBrush="Black" >
+            <TextBlock FontSize="20" HorizontalAlignment="Center" FontFamily="/Fonts/Ramyoon.ttf #Ramyoon">EDITAR MASCOTAS</TextBlock>
+
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                    <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+
+
+        </Border>
+        <Border Margin="10"  Background="White">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" >
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                            <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                            <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="/Images/perro.png" Height="100" Margin="30"></Image>
+                        <Label Grid.Row="1" HorizontalAlignment="Center" FontFamily="/Fonts/Ramyoon.ttf #Ramyoon" FontSize="20" Margin="20">PATITAS FELICES</Label>
+                    </Grid>
+
+                </Border>
+
+                <StackPanel Grid.Column="1" Margin="35">
+
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="AUTO"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Style="{StaticResource etiqueta}" >NOMBRE :</Label>
+                        <TextBox Grid.Column="1" FontFamily="/Fonts/simplicity.ttf #simplicity" FontSize="20" FontWeight="Bold" ></TextBox>
+
+                        <Label Grid.Row="1" Style="{StaticResource etiqueta}">RAZA :</Label>
+                        <TextBox Grid.Row="1" Grid.Column="1" FontFamily="/Fonts/simplicity.ttf #simplicity"   FontSize="20" FontWeight="Bold"   ></TextBox>
+
+
+                        <Label Grid.Row="2" Style="{StaticResource etiqueta}">EDAD:</Label>
+                        <TextBox Grid.Row="2" Grid.Column="1"  FontFamily="/Fonts/simplicity.ttf #simplicity"  FontSize="20" FontWeight="Bold" ></TextBox>
+
+
+                        <Label Grid.Row="3" Style="{StaticResource etiqueta}">ESTADO:</Label>
+                        <ComboBox Grid.Row="3" Grid.Column="1"></ComboBox>
+
+
+                        <Label Grid.Row="4" Style="{StaticResource etiqueta}">DESCRIPCION:</Label>
+                        <TextBox Grid.Row="4" Grid.Column="1" FontFamily="/Fonts/simplicity.ttf #simplicity"   FontSize="20" FontWeight="Bold"   ></TextBox>
+
+                        <Grid Grid.Column="1" Grid.Row="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Margin="10"
+                                    Content="AGREGAR"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    FontSize="24">
+
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="Black"></Setter>
+                                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="140" 
+                                        Height="25"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+
+
+
+
+
+
+
+                            </Button>
+
+                            <Button Grid.Column="1"
+                                    Margin="10"
+                                    Content="CANCELAR"
+                                    Foreground="White"
+                                    FontSize="24">
+
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="Black"></Setter>
+                                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="140" 
+                                        Height="25"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+
+
+
+
+
+                            </Button>
+
+                        </Grid>
+
+
+
+
+                    </Grid>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+
+    </DockPanel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </UserControl>
