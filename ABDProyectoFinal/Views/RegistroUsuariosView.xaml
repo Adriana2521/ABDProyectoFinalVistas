@@ -46,6 +46,23 @@
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
+                    <Border>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition Height="30"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#820602"
+                                   
+                        >ERROR</TextBlock>
+
+                        </Grid>
+                    </Border>
+
+
+
+
                     <StackPanel Grid.Column="1" Margin="0,20,0,0">
 
                         <TextBlock  Style="{StaticResource Font}"

@@ -194,13 +194,14 @@
                                     </ControlTemplate>
                                 </Button.Template>
 
-
-
-
-
                             </Button>
+                            
+                            
 
                         </Grid>
+
+                        <TextBlock Grid.Row="6" Grid.Column="1"  FontWeight="Bold" HorizontalAlignment="Center" Foreground="#820602"
+                        >ERROR</TextBlock>
 
 
 
