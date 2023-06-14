@@ -56,9 +56,24 @@
                 </Button>
 
 
+                <Border>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#820602"
+                                   
+                        >ERROR</TextBlock> 
+                        
+                    </Grid>
+                </Border>
 
 
-                <StackPanel Grid.Column="1" Orientation="Vertical" Margin="0,10,0,0">
+
+
+                    <StackPanel Grid.Column="1" Orientation="Vertical" Margin="0,10,0,0">
                     <Image Source="/Images/perro.png" Width="100" Height="100"></Image>
                     <TextBlock Text="PATITAS FELICES"
                                HorizontalAlignment="Center" 

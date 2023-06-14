@@ -40,18 +40,19 @@
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                    <GradientStop Color="#e89d10" Offset="0"></GradientStop>
                     <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
                 </LinearGradientBrush>
             </Border.Background>
 
             <DockPanel>
+
                 <Button DockPanel.Dock="Right"
                             Padding="10,5"
                             Foreground="White"
                             BorderThickness="0"
                             FontSize="27"
-                            >Nueva Mascota
+                            >REGRESAR
 
 
                     <Button.Style>
@@ -84,9 +85,13 @@
 
                 </Button>
 
+
+
+
+
                 <TextBlock FontSize="35"
                               HorizontalAlignment="Center" 
-                              FontFamily="/Fonts/Ramyoon.ttf #Ramyoon">Mascotas
+                              FontFamily="/Fonts/Ramyoon.ttf #Ramyoon">CITAS
 
                 </TextBlock>
 
@@ -94,7 +99,7 @@
         </Border>
 
 
-        <Border Background="WhiteSmoke" Padding="10" Margin="10">
+        <Border Background="#ebe7b7" Padding="10" Margin="10">
             <StackPanel>
 
                 <Grid>
@@ -104,7 +109,7 @@
                         <ColumnDefinition ></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Image Source="/Images/Logol.png" Height="180"></Image>
+                    <Image Source="/Images/Fondop.jpg" Height="130" Margin="10" ></Image>
 
                     <Grid Grid.Column="1">
 
@@ -118,24 +123,21 @@
                             <RowDefinition ></RowDefinition>
                             <RowDefinition ></RowDefinition>
                             <RowDefinition></RowDefinition>
-                            <RowDefinition ></RowDefinition>
-                            <RowDefinition></RowDefinition>
+                           
 
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Column="0" Style="{StaticResource etiqueta}">NOMBRE:</Label>
-                        <Label Grid.Row="1" Style="{StaticResource etiqueta}" >RAZA:</Label>
-                        <Label Grid.Row="2" Style="{StaticResource etiqueta}" >EDAD:</Label>
-                        <Label Grid.Row="3" Style="{StaticResource etiqueta}" >ESTADO:</Label>
-                        <Label Grid.Row="4" Style="{StaticResource etiqueta}">DESCRIPCION:</Label>
+                        <Label Grid.Column="0" Style="{StaticResource etiqueta}">CITA:</Label>
+                        <Label Grid.Row="1" Style="{StaticResource etiqueta}" >USUARIO:</Label>
+                        <Label Grid.Row="2" Style="{StaticResource etiqueta}" >MASCOTA:</Label>
+                        <Label Grid.Row="3" Style="{StaticResource etiqueta}" >FECHA:</Label>
 
 
-                        <Label Grid.Column="1" Style="{StaticResource INFO}">Roky</Label>
-                        <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource INFO}" >Pastor aleman</Label>
-                        <Label Grid.Column="1" Grid.Row="2" Style="{StaticResource INFO}" >1 año</Label>
-                        <Label Grid.Column="1" Grid.Row="3" Style="{StaticResource INFO}" >Adoptado</Label>
-                        <Label  Grid.Column="1" Grid.Row="4" Style="{StaticResource INFO}">Pelaje gris, ojos marrones</Label>
-
+                        <Label Grid.Column="1" Style="{StaticResource INFO}">CITA</Label>
+                        <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource INFO}" >USUARIO</Label>
+                        <Label Grid.Column="1" Grid.Row="2" Style="{StaticResource INFO}" >MASCOTA</Label>
+                        <Label Grid.Column="1" Grid.Row="3" Style="{StaticResource INFO}" >FECHA</Label>
+                       
 
                     </Grid>
 
