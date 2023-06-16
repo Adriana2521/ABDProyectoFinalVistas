@@ -20,7 +20,7 @@
     </UserControl.Resources>
 
 
-    <StackPanel Margin="30">
+    <StackPanel Margin="0">
 
         <StackPanel.Background>
             <ImageBrush ImageSource="/Images/Fondop.jpg"/>
@@ -28,7 +28,7 @@
 
         <Border  BorderThickness="0"
                  Opacity="0.8 " 
-                 Margin="0,0,0,0">
+                 MaxHeight="600">
 
 
             <Border.Background>
@@ -38,7 +38,7 @@
                 </LinearGradientBrush>
             </Border.Background>
 
-            <Grid Margin="0,0,0,20">
+            <Grid Margin="0,0,0,66">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition Width="auto"></ColumnDefinition>

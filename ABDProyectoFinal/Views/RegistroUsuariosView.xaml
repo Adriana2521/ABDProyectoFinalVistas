@@ -8,89 +8,84 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
 
-    <UserControl.Resources>
 
+
+
+    <UserControl.Resources>
         <Style x:Key="Font" TargetType="TextBlock" >
             <Setter Property="FontFamily" Value="/Fonts/Ramyoon.ttf #Ramyoon"></Setter>
         </Style>
         <Style x:Key="dafont" TargetType="TextBlock" >
             <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
         </Style>
-
-
     </UserControl.Resources>
-
-
     <DockPanel>
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/Images/FondoR.jpg"></ImageBrush>
+        </DockPanel.Background>
 
-        <StackPanel Margin="30">
+        <Border BorderThickness="0"
+                    Opacity="0.7" MaxHeight="600">
 
-            <StackPanel.Background>
-                <ImageBrush ImageSource="/Images/FondoR.jpg"></ImageBrush>
-            </StackPanel.Background>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                    <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
 
-            <Border BorderThickness="0"
-                    Opacity="0.7">
+            <Grid Margin="0,0,0,23">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                        <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
-                        <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
-                    </LinearGradientBrush>
-                </Border.Background>
+                <Border>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                        </Grid.RowDefinitions>
 
-                <Grid Margin="0,0,0,23">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition Width="auto"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <Border>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition Height="30"></RowDefinition>
-                            </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#820602"
+                        <TextBlock Grid.Row="1" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#820602"
                                    
                         >ERROR</TextBlock>
 
-                        </Grid>
-                    </Border>
+                    </Grid>
+                </Border>
 
 
 
 
-                    <StackPanel Grid.Column="1" Margin="0,20,0,0">
+                <StackPanel Grid.Column="1" Margin="0,40,0,0">
 
-                        <TextBlock  Style="{StaticResource Font}"
+                    <TextBlock  Style="{StaticResource Font}"
                                     FontSize="40">Registro de Usuario
-                        </TextBlock>
-                        
-                        
-                        <TextBlock Margin="0,40,0,0"
+                    </TextBlock>
+
+
+                    <TextBlock Margin="0,40,0,0"
                                    Style="{StaticResource dafont}"
                                    FontSize="28"
                                    FontWeight="Bold">NOMBRE :
-                        </TextBlock>
-                        <TextBox BorderBrush="Black"
+                    </TextBlock>
+                    <TextBox BorderBrush="Black"
                                  Background="Transparent"
                                  BorderThickness="0,0,0,1"
                                  TextAlignment="Left"
                                  FontWeight="Bold"
                                  FontSize="15"
                                  Padding="20,0,0,0" >
-                            
-                        </TextBox>
 
-                        <TextBlock Margin="0,40,0,0"
+                    </TextBox>
+
+                    <TextBlock Margin="0,40,0,0"
                                    Style="{StaticResource dafont}"
                                    FontSize="28"
                                    FontWeight="Bold">E-MAIL :
-                        </TextBlock>
-                        <TextBox BorderBrush="Black"
+                    </TextBlock>
+                    <TextBox BorderBrush="Black"
                                  Background="Transparent"
                                  BorderThickness="0,0,0,1"
                                  TextAlignment="Left"
@@ -98,13 +93,13 @@
                                  FontSize="15"
                                  Padding="20,0,0,0" >
 
-                        </TextBox>
-                        <TextBlock Margin="0,40,0,0"
+                    </TextBox>
+                    <TextBlock Margin="0,40,0,0"
                                    Style="{StaticResource dafont}"
                                    FontSize="28"
                                    FontWeight="Bold">PASSWORD :
-                        </TextBlock>
-                        <PasswordBox Grid.Column="1"
+                    </TextBlock>
+                    <PasswordBox Grid.Column="1"
                                    Background="Transparent" 
                                    BorderThickness="0,0,0,1"
                                    BorderBrush="Black"
@@ -113,171 +108,119 @@
                                    FontSize="15" 
                                    Padding="20,0,0,0">
 
-                        </PasswordBox>
+                    </PasswordBox>
 
-                        <Grid >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition></ColumnDefinition>
-                                <ColumnDefinition></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
 
-                            <Button Margin="15"
+                        <Button Margin="0,20"
                                     Content="REGISTRAR"
                                     Foreground="White"
                                     BorderThickness="0"
                                     FontSize="20" >
 
 
-                                <Button.Style>
-                                    <Style TargetType="Button">
-                                        <Setter Property="Background" Value="Black"></Setter>
-                                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="Black"></Setter>
+                                    <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
 
-                                        <Style.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="TRUE">
-                                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="TRUE">
+                                            <Setter Property="Background" Value="#1d1d1d"></Setter>
 
-                                            </Trigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </Button.Style>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
 
 
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border Width="120" 
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="120" 
                                         Height="25"
                                         CornerRadius="9"
                                         Background="{TemplateBinding Background}"
                                         >
-                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+                                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
 
-                                        </Border>
-                                    </ControlTemplate>
-                                </Button.Template>
-
-
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
 
 
-                            </Button>
 
-                            <Button Grid.Column="1" Margin="15"
+
+                        </Button>
+
+                        <Button Grid.Column="1" 
                                     Content="CANCELAR"
                                     Foreground="White"
                                     BorderThickness="0"
                                     FontSize="20" >
 
 
-                                <Button.Style>
-                                    <Style TargetType="Button">
-                                        <Setter Property="Background" Value="Black"></Setter>
-                                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="Black"></Setter>
+                                    <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
 
-                                        <Style.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="TRUE">
-                                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="TRUE">
+                                            <Setter Property="Background" Value="#1d1d1d"></Setter>
 
-                                            </Trigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </Button.Style>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
 
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border Width="120" 
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="120" 
                                         Height="25"
                                         CornerRadius="9"
                                         Background="{TemplateBinding Background}"
                                         >
-                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+                                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
 
-                                        </Border>
-                                    </ControlTemplate>
-                                </Button.Template>
-
-
-
-
-
-
-                            </Button>
-                            
-                            
-                            
-                            
-                            
-                        </Grid>
-
-
-
-
-
-
-
-
-
-                    </StackPanel>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </Grid>
-                
-                
-                
-                
-            </Border>
-            
-            
-            
-            
-        </StackPanel>
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
     </DockPanel>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </UserControl>

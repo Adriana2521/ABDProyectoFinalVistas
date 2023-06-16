@@ -6,7 +6,405 @@
              xmlns:local="clr-namespace:ABDProyectoFinal.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+
+
+    <DockPanel Background="WhiteSmoke">
+
+        <Label DockPanel.Dock="Top" Height="40"
+               HorizontalContentAlignment="Center"
+               Padding="5" 
+               Foreground="WhiteSmoke"
+               FontWeight="Bold"
+               FontSize="20"
+               Background="Black"
+               FontFamily="/Fonts/Ramyoon.ttf #Ramyoon"
+        > ADMINISTRADOR</Label>
+
+
+        <StackPanel DockPanel.Dock="Right"  Width="110"  >
+
+            <StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                    <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+
+
+            <Button  BorderThickness="0"  Foreground="White" FontSize="15" 
+                    Margin="9">CITAS
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="90" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+
+
+
+            <Button  BorderThickness="0"  Foreground="White" FontSize="15" 
+                    Command="{Binding Path=NavegarAgregarMascotaCommand}" Margin="9">AGREGAR
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+                   
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="90" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+            <Button  BorderThickness="0"  Foreground="White" FontSize="17"
+                     Command="{Binding Path=VerMascotasCommand}" Margin="9">MASCOTAS
+
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="90" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">Mascotas</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+
+            <Button  BorderThickness="0"  Foreground="White" FontSize="15" 
+                    Margin="9">CITAS ACEPTADAS
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="92" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+
+            <Button  BorderThickness="0"  Foreground="White" FontSize="15" 
+                    Margin="9">CITAS PENDIENTES
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="92" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+            <Button  BorderThickness="0"  Foreground="White" FontSize="12" 
+                    Margin="9">MASCOTAS ADOPTADAS
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="92" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+            <Button  BorderThickness="0"  Foreground="White" FontSize="12" 
+                    Margin="9">MASCOTAS DISPONIBLES
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="92" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+
+            <Button  BorderThickness="0"  Foreground="White" FontSize="12" 
+                    Margin="9">REGISTRO DE ADOPCION
+
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Black"></Setter>
+                        <Setter Property="FontFamily" Value="/Fonts/Schoolwork-Regular.ttf #Schoolwork"></Setter>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="TRUE">
+                                <Setter Property="Background" Value="#1d1d1d"></Setter>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="92" 
+                                        Height="30"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}"
+                                        >
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+
+                <!--<StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">AgregarMascota</TextBlock>
+                </StackPanel>-->
+
+            </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackPanel>
+
+        <!--<ContentControl
+            Content="{Binding VistasAdministrador}">
+
+        </ContentControl>-->
+        <ContentControl >
+            <!--<ContentControl.Style>
+                <Style TargetType="ContentControl">
+                    <Setter Property="Content" Value="{StaticResource AgregarMascota}"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=VA}" Value="{x:Static local:Accion.VistaMascotas}">
+                            <Setter Property="Content" Value="{StaticResource VistaMascotas}"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=VA}" Value="{x:Static local:Accion.AgregarMascota}">
+                            <Setter Property="Content" Value="{StaticResource AgregarMascota}"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ContentControl.Style>-->
+        </ContentControl>
+    </DockPanel>
 </UserControl>
+
+
+
+
+
+
+
+
+
+
+
+
+
