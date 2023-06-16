@@ -6,7 +6,108 @@
              xmlns:local="clr-namespace:ABDProyectoFinal.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+
+
+
+
+
+    <DockPanel Background="WhiteSmoke">
+
+
+
+        <Label DockPanel.Dock="Top" Height="40"
+               HorizontalContentAlignment="Center"
+               Padding="5" 
+               Foreground="WhiteSmoke"
+               FontWeight="Bold"
+               FontSize="25"
+               FontFamily="/Fonts/Ramyoon.ttf #Ramyoon"
+               Background="Black">PATITAS FELICES</Label>
+
+
+        <StackPanel DockPanel.Dock="Right"  Width="100"  >
+
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#f2cc49" Offset="0"></GradientStop>
+                    <GradientStop Color="#ffff8e" Offset="0.75"></GradientStop>
+                   
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Button Background="Transparent" BorderThickness="0"  
+                    Margin="10">
+
+
+                <StackPanel>
+
+                    <Image Source="/Images/patas.png"></Image>
+
+                    <Label HorizontalAlignment="Center" FontSize="14" FontFamily="/Fonts/Ramyoon.ttf #Ramyoon">MASCOTAS</Label>
+                   
+                </StackPanel>
+
+
+
+            </Button>
+            <Button Background="Transparent" BorderThickness="0"  
+                     Margin="0">
+                <StackPanel>
+
+                    <Image Source="/Images/reserva.png"></Image>
+                    <Label HorizontalAlignment="Center" FontSize="15" FontFamily="/Fonts/Ramyoon.ttf #Ramyoon">MIS CITAS</Label>
+                </StackPanel>
+
+            </Button>
+            <!--<Button Background="Transparent" BorderThickness="0"  
+                    Command="{Binding  VerCitasHoyCommand}" Margin="10">
+                <StackPanel>
+
+                    <TextBlock FontSize="10" Margin="0" HorizontalAlignment="Center" Foreground="White">Mascotas</TextBlock>
+                </StackPanel>
+
+            </Button>-->
+        </StackPanel>
+
+        <ContentControl >
+            <!--<ContentControl.Style>
+                <Style TargetType="ContentControl">
+                    <Setter Property="Content" Value="{StaticResource VerMascotas}"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding XPath=VS}" Value="{x:Static local:AccionSolicitante.VerMascotas}">
+                            <Setter Property="Content" Value="{StaticResource VerMascotas}"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding XPath=VS}" Value="{x:Static local:AccionSolicitante.VerMascotas}">
+                            <Setter Property="Content" Value="{StaticResource VerMascotas}"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ContentControl.Style>-->
+        </ContentControl>
+    </DockPanel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </UserControl>

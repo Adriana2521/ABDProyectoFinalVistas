@@ -16,7 +16,9 @@
     <None Remove="Images\Fondop.jpg" />
     <None Remove="Images\FondoR.jpg" />
     <None Remove="Images\Logol.png" />
+    <None Remove="Images\patas.png" />
     <None Remove="Images\perro.png" />
+    <None Remove="Images\reserva.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,7 +46,13 @@
     <Resource Include="Images\Logol.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\patas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\perro.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\reserva.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
