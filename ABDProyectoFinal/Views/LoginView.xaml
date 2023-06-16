@@ -20,15 +20,15 @@
     </UserControl.Resources>
 
 
-    <StackPanel Margin="0">
+    <DockPanel Margin="0">
 
-        <StackPanel.Background>
+        <DockPanel.Background>
             <ImageBrush ImageSource="/Images/Fondop.jpg"/>
-        </StackPanel.Background>
+        </DockPanel.Background>
 
         <Border  BorderThickness="0"
-                 Opacity="0.8 " 
-                 MaxHeight="600">
+                 Opacity="0.7 " 
+                 MaxHeight="700">
 
 
             <Border.Background>
@@ -38,22 +38,28 @@
                 </LinearGradientBrush>
             </Border.Background>
 
-            <Grid Margin="0,0,0,66">
+            <Grid Margin="0,0,0,10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
+                <Border Grid.Column="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
 
-                <Button Grid.Column="2"
-                        Margin="60,0,0,350"
-                        Content="REGISTRARSE"
-                        Background="Black"
-                        Foreground="White"
-                        >
+                        <Button Background="Black"  Foreground="White" FontSize="15" >REGISTRARSE</Button>
+                        
+                    </Grid>
                     
-                </Button>
+                    
+                    
+                </Border>
+               
 
 
                 <Border>
@@ -197,7 +203,7 @@
         
         
         
-    </StackPanel>
+    </DockPanel>
     
     
     
